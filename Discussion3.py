@@ -4,24 +4,29 @@ class Rectangle():
     # Create the constructor "__init__" method
 
     # YOUR CODE HERE
-
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
 
 
     # Create the "__str__" method
 
     # YOUR CODE HERE
-
-
+    def __str__(self):
+        return f"Rectangle with length {self.length} and width {self.width}"
 
     # Create the "area_calculator" method
 
     # YOUR CODE HERE
-
+    def area_calculator(self):
+        return self.length * self.width
 
 
     # Create the "__eq__" method
     # 
     # Returns a boolean value
+    def __eq__(self, other):
+        return self.length == other.length and self.width == other.width
 
     # YOUR CODE HERE
 
